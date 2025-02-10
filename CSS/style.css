@@ -1,0 +1,114 @@
+/*Default Elemen*/
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: #CCD6A6;
+    color:#617A55;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+    border-radius: 10px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 10px;
+}
+label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#537188;
+    align-self: center;
+}
+button{
+    cursor:pointer;
+    background-color: #AAE3E2;
+    color: #537188;
+    border: none;
+    padding: 10px 15px;
+    border-radius:20px;
+    margin: 10px 10px;
+    font-size: 18;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button:hover {
+    background-color: #A6D0DD;
+}
+button:active {
+    transform: translateY(5px);
+}
+nav p {
+    font-size: 15px;
+    color: #6f8a9e;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ p {
+    color: blue;
+}
+/* MARK: ID*/
+#inputField{
+    outline:none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid#374259;
+    background-color: #ECF9FF;
+    height: 40px;
+    width:420px;
+    align-self: center;
+}
+#inputField:focus {
+    border:solid #374259;
+}
+#outputField {
+    outline:none;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 40px;
+    border: solid #374259;
+    background-color: #ECF9FF;
+    height: 40px;
+    width:385px;
+    align-self: center;
+}
+#outputField:focus {
+    border:solid #374259;
+}
+#methodField {
+    outline:none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 40px;
+    border: solid #374259;
+    background-color: #ECF9FF;
+    height: 50px;
+    width:385px;
+    align-self: center;
+}
+#methodField:focus {
+    border:solid #374259;
+}
+
+/*MARK CLASS*/
+.InputSection {
+    display: flex;
+    flex-direction: column;
+}
+.InputButtonSection {
+    display: flex;
+    flex-direction: row;
+    align-self:center;
+   
+}
+.OutputSection {
+    display: flex;
+    flex-direction: column;
+}
+.MethodSection {
+    display: flex;
+    flex-direction: column;
+}

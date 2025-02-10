@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Temperature Conversion</title>
+    <script src="./JS/index.js"></script>
+    <script>
+        function conversion()
+        {
+        var tempcelcius = document.getElementById("inputField").value;
+        var tempfahrenheit = (tempcelcius * (9 / 5 )) + 32;
+        document.getElementById("outputField").value = tempfahrenheit;
+        var greeting = tempcelcius + " * (9/5) + 32 = " + tempfahrenheit;
+        document.getElementById("methodField").value = tempfahrenheit.innerHTML = greeting;
+        } 
+        function reverse()
+        {
+        var tempfahrenheit = document.getElementById("inputField").value;
+        var tempcelcius = (tempfahrenheit - 32) * (5 / 9 );
+        document.getElementById("outputField").value = tempcelcius;
+        var greeting = tempfahrenheit + " - 32 * (9/5) = " + tempcelcius;
+        document.getElementById("methodField").value = tempcelcius.innerHTML = greeting;
+        }
+        function clearResult()
+        {
+        document.getElementById("inputField").value =''
+        document.getElementById("outputField").value =''
+        document.getElementById("methodField").value =''
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Temperature Conversion</h1>
+    </header>
+    
+    <section class="InputSection">
+        <label for="inputField">Celcius</label>
+        <input type="text" id="inputField" placeholder="Celcius"/>
+        <div class="InputButtonSection">
+            <button type="button" onclick="conversion()">Conversion</button>
+            <button type="button" value="reset" onclick="clearResult()">Reset</button>
+            <button type="button" onclick="reverse()">Reverse</button>
+        </div>
+    </section>
+    <section class="OutputSection">
+        <label for="outputField">Fahrenheit</label>
+        <input type="text" id="outputField" placeholder="Fahrenheit"/>
+    </section>
+    <section class="MethodSection">
+        <label for="methodSection">Cara Kalkulasi:</label>
+        <input type="text" id="methodField" placeholder="Method">
+    </section>
+    <p>Celcius ke Fahrenheit</p>
+    <section>
+    <div class="container">
+        <label>Cara Konversi Dari Celcius ke Fahrenheit</label>
+        <nav>
+            <p>Suhu dalam derajat Fahrenheit (°F) sama dengan suhu dalam derajat celcius(°C) kali 9/5 tambah 32 </p>
+            <p>S(°F) = (S(°C) x 9/5) + 32</p>
+            <p>atau</p>
+            <p>S(°F) = (S(°C) x 1.8) + 32</p>
+        </nav>
+    </div>
+    </section>
+</body>
+</html>
